@@ -1,37 +1,173 @@
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/cylnlp/dialogsum_challenge/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/cylnlp/dialogsum_challenge/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>MuTual</title>
+    <meta name="description" content="test">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="/CSpider-explorer/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/CSpider-exPLORer/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./stylesheets/layout.css">
+    <link rel="stylesheet" href="./stylesheets/index.css">
+      <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149798051-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-149798051-1');
+    </script>
+  </head>
+  <body>
+    <div class="navbar navbar-default navbar-fixed-top" id="topNavbar" role="navigation">
+      <div class="container clearfix" id="navContainer">
+        <div class="leftNav">
+          <div class="brandDiv">
+            <a class="navbar-brand" href="https://nealcly.github.io/MuTual-leaderboard/">MuTual Challenge</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="cover" id="topCover">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 id="appTitle"><b>MuTual</b>
+            </h1>
+            <h2 id="appSubtitle"><b>Mu</b>lti-<b>Tu</b>rn Di<b>al</b>ogue Reasoning Challenge</h2></div>
+        </div>
+      </div>
+    </div>
+    <div class="cover" id="contentCover">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <div class="infoCard">
+              <div class="infoBody">
+                <div class="infoHeadline">
+                   <h2>What is MuTual?</h2></div>
+                 <p>
+                   MuTual is a retrieval-based dataset for <b>Mu</b>lti-<b>Tu</b>rn di<b>al</b>ogue reasoning, which is modified from Chinese high school English listening comprehension test data. The goal of the MuTual challenge is to evaluate the reasoning ability in chatbots.
+                 <a class="btn actionBtn" href="https://arxiv.org/pdf/2004.04494">MuTual Paper</a>
+                 <a class="btn actionBtn" href="https://arxiv.org/abs/2004.04494">MuTual Paper</a>
+                 <hr>
+                 <div class="infoHeadline">
+                   <h2>Download</h2></div>
+                  <ul class="list-unstyled mainbuttonbox">
+                    <li>
+                      <a class="btn actionBtn inverseBtn" href="https://github.com/Nealcly/MuTual/tree/master/data/mutual/train" download>Download Training Set</a>
+                      <a class="btn actionBtn inverseBtn" href="https://github.com/Nealcly/MuTual/tree/master/data/mutual/dev" download>Download Dev Set</a>
+                      <a class="btn actionBtn inverseBtn" href="https://github.com/Nealcly/MuTual/tree/master/data/mutual/test" download>Download Test Set</a>
+                    </li>
+                  </ul>
+                </p>
+                </p>
+                  <div class="infoHeadline">
+                  <h2>Evaluation</h2></div>
+                <p>Once you are satisfied with your model performance on the dev set, you are encouraged to send your decode output to <a href="mailto:cuileyang@zju.edu.cn">cuileyang@zju.edu.cn</a> with your dev performance and methods to get the official scores on the test sets.</p>
+                                  <ul class="list-unstyled mainbuttonbox">
+                    <li>
+                      <a class="btn actionBtn inverseBtn" href="https://github.com/Nealcly/MuTual/blob/master/eval_sample/eval.py" download>Evaluation Script</a>
+                      <a class="btn actionBtn inverseBtn" href="https://github.com/Nealcly/MuTual/blob/master/eval_sample/decode_sample.txt" download>Sample Prediction</a>
+                    </li>
+                  </ul>
+                  <div class="infoHeadline">
+                  <h2>Data Sample</h2>
+                </div>
+                <b>Dialogue</b>
+                <table class="table sample">
+                  <tbody>
+                    <p><b>M:</b> Ma'am, you forgot your phone.</p>
+                    <p><b>F:</b> Oh, thanks, I couldn't live without this little thing. </p>
+                    <p><b>M:</b> I know what you mean. It is of great significance to you. So did you enjoy your dinner? </p>
+                    <p><b>F:</b> Oh yes, everything was just perfect. It's so hard to take the whole family out to eat, but your restaurant was perfect. Johnny had his own place to play in and I had time to talk with my sisters and their husbands. </p>
+                </tbody>
+                </table>
+                <b>Response</b>
+                <p>A. Thanks for your compliment for the restaurant. ✔</p>
+                <p>B. I’m sorry that you don’t have a good time. </p>
+                <p>C. Goodbye brother! Love you.</p>
+                <p>D. Hurry up honey, or we will be late for the dinner.</p>
+                <div class="infoHeadline">
+                  <h2>Have Questions?</h2></div>
+                <p>Ask us questions at our
+                  <a href="https://github.com/Nealcly/MuTual/issues">Github issues page</a> or contact
+                  <a href="mailto:cuileyang@westlake.edu.cn">cuileyang@westlake.edu.cn</a>.</p>
+            </div>
+                <div class="infoSubheadline">
+                  <!-- Place this tag where you want the button to render. -->
+                  <a class="github-button" href="https://github.com/Nealcly/MuTual/" data-icon="octicon-star" data-show-count="true" aria-label="Star Nealcly/MuTual/ on GitHub">Star</a></div>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <div class="infoCard">
+              <div class="infoBody">
+                <div class="infoHeadline">
+                  <h2>Leaderboard - Exact Set Match without Values</h2></div>
+                <table class="table performanceTable">
+                  <tr>
+                    <th>Rank</th>
+                    <th>Model</th>
+                    <th>R@1</th>
+                    <th>R@2</th>
+                      <th>MRR</th></tr>
+                   <tr>
+                    <td>
+                      <p>1</p>
+                      <span class="date label label-default">Apr 10, 2020</span></td>
+                    <td style="word-break:break-word;">RoBERTa
+                      <p class="institution">ZJU & MSRA & Westlake</p>
+                    <td>
+                      <b>0.713</b>
+                    </td>
+                    <td>
+                      <b>0.892</b>
+                    </td>
+                      <td>
+                      <b>0.836</b>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>2</p>
+                      <span class="date label label-default">Apr 10, 2020</span></td>
+                    <td style="word-break:break-word;">RoBERTa-MC
+                      <p class="institution">ZJU & MSRA & Westlake</p>
+                    <td>
+                      <b>0.686</b>
+                    </td>
+                    <td>
+                      <b>0.887</b>
+                    </td>
+                      <td>
+                      <b>0.822</b>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-default navbar-static-bottom footer">
+      <div class="container clearfix">
+        <div class="rightNav">
+          <div>
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <a href="/CSpider-explorer/">CSpider</a></li>
+              <li>
+                <a href="https://nlp.westlake.edu.cn">Westlake NLP Group</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <script src="/CSpider-explorer/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/CSpider-explorer/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
